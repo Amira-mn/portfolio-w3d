@@ -55,3 +55,13 @@ body{
   .pfp img{width:120px;height:120px}
   .nav a{margin-left:8px}
 }
+/* Hover effect for thumbnails */
+.thumb a img {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.thumb a:hover img {
+  transform: scale(1.04);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
