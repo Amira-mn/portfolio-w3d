@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,26 +25,40 @@
       <h2>Blender Works</h2>
 
       <div id="gallery" class="gallery-grid">
-        <!-- Placeholder items -->
-        <div class="thumb">
-          <a href="assets/blender/table.blend" download>
+
+        <div class="thumb" data-preview="assets/table.png">
+          <div class="preview">
             <img src="assets/table.png" alt="Table Chair render">
-          </a>
-          <div class="caption">Table & Chairs — Blender Project</div>
+          </div>
+          <button class="caption-btn" data-download="assets/blender/table.blend">Table & Chairs — Download Blend File</button>
         </div>
 
-        <div class="thumb">
-          <a href="assets/blender/LaScene.blend" download>
+        <div class="thumb" data-preview="assets/room.png">
+          <div class="preview">
             <img src="assets/room.png" alt="Interior Room render">
-          </a>
-          <div class="caption">Interior Scene — Blender Project</div>
+          </div>
+          <button class="caption-btn" data-download="assets/blender/LaScene.blend">Interior Scene — Download Blend File</button>
         </div>
 
-        <div class="thumb">
-          <a href="assets/blender/coffee.blend" download>
+        <div class="thumb" data-preview="assets/coffeevid.mp4" data-type="video">
+          <div class="preview">
             <video src="assets/coffeevid.mp4" autoplay muted loop playsinline></video>
-          </a>
-          <div class="caption">Coffee cup — Simulation</div>
+          </div>
+          <button class="caption-btn" data-download="assets/blender/coffee.blend">Coffee cup — Download Blend File</button>
+        </div>
+
+        <div class="thumb" data-preview="assets/forest.mkv" data-type="video">
+          <div class="preview">
+            <video src="assets/forest.mkv" autoplay muted loop playsinline></video>
+          </div>
+          <button class="caption-btn" data-download="assets/blender/forest.blend">Forest — Download Blend File</button>
+        </div>
+
+        <div class="thumb" data-preview="assets/cubes.jpeg">
+          <div class="preview">
+            <img src="assets/cubes.jpeg" alt="Three.js Preview">
+          </div>
+          <button class="caption-btn" onclick="window.open('threejs.html','_blank')">Interactive Cubes — Go To Interactive Page</button>
         </div>
 
       </div>
@@ -57,6 +70,14 @@
       <p>© MANALLAH Ines Amira — Portfolio W3D</p>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-media"></div>
+    </div>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
